@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec st-ollama *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:whisperlivekit.readthedocs.io)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(python3 -c \"import whisperlivekit; import os; print\\(os.path.dirname\\(whisperlivekit.__file__\\)\\)\")",
+      "Bash(pip show *)",
+      "Bash(wlk --help)",
+      "Bash(python3 -m venv /Users/thailoc/code/speech-translate/venv)",
+      "Bash(/Users/thailoc/code/speech-translate/venv/bin/pip install *)",
+      "Bash(git clone *)",
+      "Bash(venv/bin/python wlk-repo/scripts/sync_extension.py)",
+      "Bash(cp -v venv/lib/python3.13/site-packages/whisperlivekit/web/live_transcription.html chrome-extension/)",
+      "Bash(cp -v venv/lib/python3.13/site-packages/whisperlivekit/web/live_transcription.js chrome-extension/)",
+      "Bash(cp -v venv/lib/python3.13/site-packages/whisperlivekit/web/live_transcription.css chrome-extension/)",
+      "Bash(cp *)",
+      "Bash(cp -v wlk-repo/chrome-extension/background.js chrome-extension/)",
+      "Bash(cp -v wlk-repo/chrome-extension/manifest.json chrome-extension/)",
+      "Bash(cp -v wlk-repo/chrome-extension/sidepanel.js chrome-extension/)",
+      "Bash(cp -v wlk-repo/chrome-extension/requestPermissions.html chrome-extension/)",
+      "Bash(cp -v wlk-repo/chrome-extension/requestPermissions.js chrome-extension/)",
+      "Bash(brew install *)",
+      "Bash(brew services *)",
+      "Bash(ollama pull *)",
+      "Bash(curl -s http://localhost:11434/api/generate -d '{ *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['response']\\); print\\('Time:', round\\(d['total_duration']/1e9,2\\), 's'\\)\")",
+      "Bash(curl *)",
+      "Bash(cat)",
+      "Bash(ollama create *)",
+      "Bash(ollama *)",
+      "Bash(venv/bin/pip install *)",
+      "Bash(venv/bin/wlk --model base --language auto)",
+      "Bash(xargs kill *)"
+    ]
+  }
+}
